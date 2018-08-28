@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#666353">
+        <Button
+            android:id="@+id/button_prev"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/prev"/>
+
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/pause" />
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:background="@drawable/play" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/stop" />
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/next"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSongTitle"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
